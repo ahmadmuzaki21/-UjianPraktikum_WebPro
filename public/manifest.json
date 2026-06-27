@@ -1,0 +1,16 @@
+{
+  "name": "Pengelola Tugas PWA",
+  "short_name": "Tugas",
+  "description": "Aplikasi Pengelola Tugas untuk Ujian Praktikum WebPro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#4a90e2",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Check_icon.svg/512px-Check_icon.svg.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

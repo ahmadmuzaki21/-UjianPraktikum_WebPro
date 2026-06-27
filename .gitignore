@@ -1,0 +1,4 @@
+node_modules/
+.env
+.DS_Store
+postgresql-42.7.3.jar

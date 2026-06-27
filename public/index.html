@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengelola Tugas</title>
+    <link rel="stylesheet" href="/styles.css?v=3">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4a90e2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pengelola Tugas</h1>
+            <p>Selesaikan tugas Anda hari ini!</p>
+            <button id="enableNotifBtn" class="notif-btn">Aktifkan Notifikasi</button>
+        </header>
+
+        <main>
+            <section class="task-form-section">
+                <h2>Tambah Tugas Baru</h2>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <input type="text" id="title" placeholder="Judul Tugas..." required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="description" placeholder="Deskripsi Tugas (Opsional)..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Tambah</button>
+                </form>
+            </section>
+
+            <section class="task-list-section">
+                <h2>Daftar Tugas</h2>
+                <div id="taskList" class="task-list">
+                    <!-- Task items will be injected here via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Edit Tugas</h2>
+            <form id="editForm">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <input type="text" id="editTitle" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="editDescription"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Simpan Perubahan</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/app.js?v=4"></script>
+</body>
+</html>
